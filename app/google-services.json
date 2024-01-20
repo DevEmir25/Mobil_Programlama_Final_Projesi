@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "558071914518",
+    "project_id": "final-deneme-bb411",
+    "storage_bucket": "final-deneme-bb411.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558071914518:android:40f89224398ccc69c99537",
+        "android_client_info": {
+          "package_name": "com.example.final_deneme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8knN_zVS1-9qlxnKCfn139d8ythY5_yU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

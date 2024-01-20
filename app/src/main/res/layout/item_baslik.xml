@@ -1,0 +1,25 @@
+<!-- item_baslik.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"/>
+
+    <!-- item_baslik.xml -->
+    <ImageView
+        android:id="@+id/imageViewSecili"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_baseline_check_circle_24"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-posta"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLoginEmail"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText"
+        />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLoginPassword"
+        android:text="Giriş"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/registerRedirectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:text="Kayıt Ol"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/errorMessageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerRedirectButton"
+        android:layout_marginTop="16dp"
+        android:textColor="#FF0000"
+        android:text=""
+        android:visibility="gone"/>
+</RelativeLayout>

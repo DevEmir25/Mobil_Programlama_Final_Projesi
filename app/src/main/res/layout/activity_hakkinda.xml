@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hakkında"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageViewProfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/my_photo"
+        android:layout_below="@id/textViewBaslik"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Profil Fotoğrafı"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textViewBilgi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewProfil"
+        android:text="Projeler \n Mobil Oyun Projesi : Cargo Clicker
+        \n Bilgisayar Oyunu Projesi : VARDIA"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

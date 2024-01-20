@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="İsim"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:textSize="24sp"
+        android:hint="Soyisim"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSurname"
+        android:textSize="24sp"
+        android:hint="E-posta"
+        tools:ignore="HardcodedText"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+
+        android:textSize="24sp"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:text="Kayıt Ol"
+        android:scaleType="center"
+        tools:ignore="HardcodedText"
+        />
+</RelativeLayout>

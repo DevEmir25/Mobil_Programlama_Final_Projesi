@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dikey çizgi (divider) yüksekliği -->
+    <dimen name="divider_height">1dp</dimen>
+
+    <!-- Başlıklar arasındaki boşluk -->
+    <dimen name="divider_margin_bottom">16dp</dimen>
+    <!-- Divider (çizgi) rengi -->
+    <color name="divider_color">#CCCCCC</color>
+</resources>

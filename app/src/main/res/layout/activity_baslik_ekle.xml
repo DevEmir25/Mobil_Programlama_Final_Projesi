@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewBaslikEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Başlık Ekle"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextBaslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewBaslikEkle"
+        android:layout_marginTop="16dp"
+        android:hint="Başlık"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText"/>
+
+    <EditText
+        android:id="@+id/editTextAciklama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextBaslik"
+        android:layout_marginTop="16dp"
+        android:hint="Başlık Açıklaması"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/baslikEkleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAciklama"
+        android:layout_marginTop="16dp"
+        android:text="Başlık Ekle"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/baslikEkleButton"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBasliklar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+</RelativeLayout>

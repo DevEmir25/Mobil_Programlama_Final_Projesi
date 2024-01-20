@@ -1,0 +1,61 @@
+<!-- activity_fotograf_ekle.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textViewBaslikEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fotoğraf Ekle"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:id="@+id/imageViewFoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/placeholder_image"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/textViewBaslikEkle"
+        android:layout_marginTop="16dp"
+        android:clickable="false"/>
+
+
+    <!-- Başlıkların listesi ve etiketleme için tik butonları (RecyclerView) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBaslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewFoto"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnKamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kamera"
+        android:layout_below="@id/recyclerViewBaslik"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/btnEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ekle"
+        android:layout_below="@id/btnKamera"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText"
+        android:textSize="24sp"/>
+
+</RelativeLayout>
